@@ -1,0 +1,120 @@
+  Container _tabbarItem(String images, String images2) {
+    return Container(
+      height: 300,
+      width: double.infinity,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: [
+          Container(
+            height: 250,
+            width: 300,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                image: DecorationImage(
+                    image: AssetImage(images), fit: BoxFit.cover)),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Container(
+                  height: 80,
+                  padding: EdgeInsets.only(left: 20, right: 20),
+                  margin: EdgeInsets.only(bottom: 20, right: 20, left: 20),
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(.8),
+                      borderRadius: BorderRadius.circular(15)),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Nusa Penida Island",
+                        style: TextStyle(
+                            color: Colors.grey[800],
+                            fontFamily: "Poppins",
+                            fontSize: 18),
+                      ),
+                      Row(
+                        children: const [
+                          Icon(
+                            Icons.location_on,
+                            size: 15,
+                            color: Colors.blue,
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            "Bali, Indonesia",
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontFamily: "Poppins",
+                                fontSize: 13),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(left: 20),
+            height: 250,
+            width: 300,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                image: DecorationImage(
+                    image: AssetImage(images2), fit: BoxFit.cover)),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Container(
+                  height: 80,
+                  padding: EdgeInsets.only(left: 20, right: 20),
+                  margin: EdgeInsets.only(bottom: 20, right: 20, left: 20),
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(.8),
+                      borderRadius: BorderRadius.circular(15)),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Nusa Penida Island",
+                        style: TextStyle(
+                            color: Colors.grey[800],
+                            fontFamily: "Poppins",
+                            fontSize: 18),
+                      ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.location_on,
+                            size: 15,
+                            color: Colors.blue,
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            "Bali, Indonesia",
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontFamily: "Poppins",
+                                fontSize: 13),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
